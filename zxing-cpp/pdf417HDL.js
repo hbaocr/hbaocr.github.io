@@ -112,7 +112,7 @@ async function decode_zxing(canvas) {
         let nt = new Date().getTime();
         if(result.text.length>0){
             document.getElementById('result').innerHTML = result.text;
-            window.alert(result);
+            window.alert(result.text);
         }
         let {format,text,error}=result;
        
