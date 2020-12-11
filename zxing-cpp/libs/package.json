@@ -1,0 +1,17 @@
+{
+  "name": "libs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ImageFilter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx browserify ImageFilter.js --s ImageFilter -o ./dist/ImageFilter.js && npx minify ./dist/ImageFilter.js > ./dist/ImageFilter.min.js "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ndarray-from-canvas": "^1.0.0",
+    "save-pixels": "^2.3.4",
+    "zeros": "^1.0.0"
+  }
+}
